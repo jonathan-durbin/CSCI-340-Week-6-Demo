@@ -1,11 +1,21 @@
-[gd_scene load_steps=4 format=3 uid="uid://dwu5pj67pdtie"]
+[gd_scene load_steps=10 format=3 uid="uid://dwu5pj67pdtie"]
 
 [ext_resource type="Script" uid="uid://n176jf46g2oh" path="res://v2_event_based/main/main.gd" id="1_j8e5h"]
 [ext_resource type="Script" uid="uid://c5c27kexwhy8a" path="res://v2_event_based/main/spawner.gd" id="2_gk5yv"]
+[ext_resource type="Script" uid="uid://c5iv68f3djieg" path="res://v2_event_based/main/sound_system.gd" id="2_sg4s6"]
 [ext_resource type="PackedScene" uid="uid://0we552v27cfi" path="res://v2_event_based/block/block.tscn" id="3_4vkin"]
+[ext_resource type="AudioStream" uid="uid://c425qlkriufef" path="res://assets/audio/pop/pop-01.mp3" id="3_dea5i"]
+[ext_resource type="AudioStream" uid="uid://da64648mfjevn" path="res://assets/audio/pop/pop-02.mp3" id="4_akxqh"]
+[ext_resource type="AudioStream" uid="uid://blxgt2fn7ve0i" path="res://assets/audio/pop/pop-03.mp3" id="5_gn343"]
+[ext_resource type="AudioStream" uid="uid://d3oe0t1647fa8" path="res://assets/audio/pop/pop-04.mp3" id="6_ca8gv"]
+[ext_resource type="AudioStream" uid="uid://bnbvnipw30sd7" path="res://assets/audio/pop/pop-05.mp3" id="7_4te2j"]
 
 [node name="Main" type="Node" groups=["main_controller"]]
 script = ExtResource("1_j8e5h")
+
+[node name="SoundSystem" type="Node" parent="."]
+script = ExtResource("2_sg4s6")
+destroy_sounds = Array[AudioStream]([ExtResource("3_dea5i"), ExtResource("4_akxqh"), ExtResource("5_gn343"), ExtResource("6_ca8gv"), ExtResource("7_4te2j")])
 
 [node name="Spawner" type="Node2D" parent="."]
 script = ExtResource("2_gk5yv")
