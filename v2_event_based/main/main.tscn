@@ -1,0 +1,185 @@
+[gd_scene load_steps=4 format=3 uid="uid://dwu5pj67pdtie"]
+
+[ext_resource type="Script" uid="uid://n176jf46g2oh" path="res://v2_event_based/main/main.gd" id="1_j8e5h"]
+[ext_resource type="Script" uid="uid://c5c27kexwhy8a" path="res://v2_event_based/main/spawner.gd" id="2_gk5yv"]
+[ext_resource type="PackedScene" uid="uid://0we552v27cfi" path="res://v2_event_based/block/block.tscn" id="3_4vkin"]
+
+[node name="Main" type="Node" groups=["main_controller"]]
+script = ExtResource("1_j8e5h")
+
+[node name="Spawner" type="Node2D" parent="."]
+script = ExtResource("2_gk5yv")
+
+[node name="Blocks" type="Node2D" parent="."]
+
+[node name="Block" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(107, 293)
+
+[node name="Block2" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(263, 293)
+
+[node name="Block3" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(419, 293)
+
+[node name="Block4" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(575, 293)
+
+[node name="Block5" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(732, 293)
+
+[node name="Block6" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(888, 293)
+
+[node name="Block7" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(1044, 293)
+
+[node name="Block8" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(184, 340)
+
+[node name="Block9" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(340, 340)
+
+[node name="Block10" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(496, 340)
+
+[node name="Block11" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(652, 340)
+
+[node name="Block12" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(809, 340)
+
+[node name="Block13" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(965, 340)
+
+[node name="Block14" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(107, 386)
+
+[node name="Block15" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(263, 386)
+
+[node name="Block16" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(419, 386)
+
+[node name="Block17" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(575, 386)
+
+[node name="Block18" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(732, 386)
+
+[node name="Block19" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(888, 386)
+
+[node name="Block20" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(1044, 386)
+
+[node name="Block21" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(184, 433)
+
+[node name="Block22" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(340, 433)
+
+[node name="Block23" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(496, 433)
+
+[node name="Block24" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(652, 433)
+
+[node name="Block25" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(809, 433)
+
+[node name="Block26" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(965, 433)
+
+[node name="Block27" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(107, 478)
+
+[node name="Block28" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(263, 478)
+
+[node name="Block29" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(419, 478)
+
+[node name="Block30" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(575, 478)
+
+[node name="Block31" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(732, 478)
+
+[node name="Block32" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(888, 478)
+
+[node name="Block33" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(1044, 478)
+
+[node name="Block34" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(184, 525)
+
+[node name="Block35" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(340, 525)
+
+[node name="Block36" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(496, 525)
+
+[node name="Block37" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(652, 525)
+
+[node name="Block38" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(809, 525)
+
+[node name="Block39" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(965, 525)
+
+[node name="Block40" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(107, 571)
+
+[node name="Block41" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(263, 571)
+
+[node name="Block42" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(419, 571)
+
+[node name="Block43" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(575, 571)
+
+[node name="Block44" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(732, 571)
+
+[node name="Block45" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(888, 571)
+
+[node name="Block46" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(1044, 571)
+
+[node name="Block47" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(184, 618)
+
+[node name="Block48" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(340, 618)
+
+[node name="Block49" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(496, 618)
+
+[node name="Block50" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(652, 618)
+
+[node name="Block51" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(809, 618)
+
+[node name="Block52" parent="Blocks" instance=ExtResource("3_4vkin")]
+position = Vector2(965, 618)
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="ScoreLabel" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = 43.0
+offset_top = 30.0
+offset_right = 218.0
+offset_bottom = 69.0

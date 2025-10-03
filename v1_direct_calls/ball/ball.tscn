@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://clyuna22c6epv"]
+
+[ext_resource type="Script" uid="uid://d3jlsy387wpov" path="res://v1_direct_calls/ball/ball.gd" id="1_iwxtd"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dnnlr"]
+radius = 20.0
+
+[sub_resource type="SphereMesh" id="SphereMesh_6plaf"]
+radius = 20.0
+height = 40.0
+
+[node name="Ball" type="RigidBody2D"]
+contact_monitor = true
+max_contacts_reported = 50
+script = ExtResource("1_iwxtd")
+
+[node name="BallCollision" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_dnnlr")
+
+[node name="BallColor" type="MeshInstance2D" parent="."]
+mesh = SubResource("SphereMesh_6plaf")

@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://wqjdvwkt3kln"]
+
+[ext_resource type="Script" uid="uid://cnjycyqewl2o4" path="res://v1_direct_calls/block/block.gd" id="1_iombv"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_iombv"]
+bounce = 0.7
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k2kjo"]
+size = Vector2(150, 40)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ov5y0"]
+size = Vector3(150, 40, 1)
+
+[node name="Block" type="StaticBody2D"]
+physics_material_override = SubResource("PhysicsMaterial_iombv")
+script = ExtResource("1_iombv")
+
+[node name="BlockCollision" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_k2kjo")
+
+[node name="BlockColor" type="MeshInstance2D" parent="."]
+mesh = SubResource("BoxMesh_ov5y0")
